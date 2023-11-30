@@ -27,6 +27,9 @@ if not os.path.exists(full_dir):
 
 
 header={'User-Agent':"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"}
+# this is the header string that identifies my current browser and OS and makes the request look like it's coming from my type of machine
+# you can look yours here https://user-agents.net/lookup and browse headers for other browser/OS combinations
+
 soup = get_soup(url,header)
 
 images=[] # will be populated with image names and links
